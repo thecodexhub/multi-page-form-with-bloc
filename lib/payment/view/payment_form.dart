@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:formz/formz.dart';
 import 'package:multi_page_form_with_bloc/checkout/checkout.dart';
-import 'package:multi_page_form_with_bloc/home_page.dart';
+import 'package:multi_page_form_with_bloc/result_page.dart';
 import 'package:multi_page_form_with_bloc/payment/bloc/payment_bloc.dart';
 
 class PaymentForm extends StatelessWidget {
@@ -140,7 +140,7 @@ class _SubmitButton extends StatelessWidget {
       listener: (context, state) {
         if (state.status.isSubmissionSuccess) {
           Navigator.of(context).push(
-            MaterialPageRoute(builder: (_) => const HomePage()),
+            MaterialPageRoute(builder: (_) => const ResultPage()),
           );
         }
       },
