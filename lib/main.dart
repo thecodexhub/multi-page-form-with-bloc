@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return RepositoryProvider<UserRepository>(
       create: (_) => UserRepository(),
       child: MaterialApp(
-        title: 'Flutter Demo',
+        title: 'Flutter Multi-Page Form',
         theme: ThemeData(
           primarySwatch: Colors.pink,
         ),
