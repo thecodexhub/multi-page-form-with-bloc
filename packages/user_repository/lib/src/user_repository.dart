@@ -19,7 +19,6 @@ class UserRepository {
       personalInfo:
           PersonalInfo(name: name, email: email, phoneNumber: phoneNumber),
     );
-    print('Updated Presonal Info: $_user');
   }
 
   Future<void> updateBillingAddress({
@@ -40,7 +39,6 @@ class UserRepository {
         postcode: postcode,
       ),
     );
-    print('Updated Billing Address: $_user');
   }
 
   Future<void> updatePayment({
@@ -59,6 +57,5 @@ class UserRepository {
         cvvNumber: cvvNumber,
       ),
     );
-    print('Updated Payment: $_user');
   }
 }
