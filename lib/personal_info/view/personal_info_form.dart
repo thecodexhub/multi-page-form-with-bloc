@@ -52,6 +52,7 @@ class _EmailInput extends StatelessWidget {
           key: const Key('personalInfoForm_emailInput_textField'),
           onChanged: (email) =>
               context.read<PersonalInfoBloc>().add(EmailChanged(email)),
+          keyboardType: TextInputType.emailAddress,
           decoration: InputDecoration(
             labelText: 'Email',
             errorText: state.email.invalid ? state.email.error?.message : null,
@@ -94,6 +95,7 @@ class _PhoneNumberInput extends StatelessWidget {
           onChanged: (phoneNumber) => context
               .read<PersonalInfoBloc>()
               .add(PhoneNumberChanged(phoneNumber)),
+          keyboardType: TextInputType.phone,
           decoration: InputDecoration(
             labelText: 'Phone Number',
             errorText: state.phoneNumber.invalid

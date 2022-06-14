@@ -77,6 +77,7 @@ class _CardNumberInput extends StatelessWidget {
           key: const Key('paymentForm_cardNumberInput_textField'),
           onChanged: (cardNumber) =>
               context.read<PaymentBloc>().add(CardNumberChanged(cardNumber)),
+          keyboardType: TextInputType.number,
           decoration: InputDecoration(
             labelText: 'Enter card number',
             errorText: state.cardNumber.invalid
@@ -100,6 +101,7 @@ class _ExpiryDateInput extends StatelessWidget {
           key: const Key('paymentForm_expiryDateInput_textField'),
           onChanged: (expiryDate) =>
               context.read<PaymentBloc>().add(ExpiryDateChanged(expiryDate)),
+          keyboardType: TextInputType.number,
           decoration: InputDecoration(
             labelText: 'Expiry Date',
             errorText: state.expiryDate.invalid
@@ -122,6 +124,7 @@ class _CvvNumberInput extends StatelessWidget {
           key: const Key('paymentForm_CvvNumberInput_textField'),
           onChanged: (cvvNumber) =>
               context.read<PaymentBloc>().add(CvvNumberChanged(cvvNumber)),
+          keyboardType: TextInputType.number,
           decoration: InputDecoration(
             labelText: 'CVV',
             errorText:

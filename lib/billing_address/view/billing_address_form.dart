@@ -137,6 +137,7 @@ class _PostcodeInput extends StatelessWidget {
           key: const Key('billingAddressForm_postcodeInput_textField'),
           onChanged: (postcode) =>
               context.read<BillingAddressBloc>().add(PostcodeChanged(postcode)),
+          keyboardType: TextInputType.number,
           decoration: InputDecoration(
             labelText: 'ZIP / postcode',
             errorText:
