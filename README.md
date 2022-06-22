@@ -12,7 +12,10 @@ This project shows -
 - how to use the Stepper widget to create a multi-step form.
 
 > **Note** 
-> Read the article [here on Medium](https://medium.com/@thecodexhubofficial/multi-step-form-with-flutter-bloc-and-stepper-widget-8d65b611cce1). 👈
+> Read the article here on [Medium](https://medium.com/@thecodexhubofficial/multi-step-form-with-flutter-bloc-and-stepper-widget-8d65b611cce1). 👈
+
+> **Note** 
+> Check out the **sample video** here on [Instagram](https://www.instagram.com/p/CeyFVmmPYPR/?utm_source=ig_web_copy_link). 👈
 
 ## Preview
 
