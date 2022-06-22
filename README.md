@@ -7,7 +7,7 @@ This project shows -
 - how to use RepositoryProvider from [flutter_bloc](https://pub.dev/packages/flutter_bloc) package.
 - how to use [formz](https://pub.dev/packages/formz) and work with validated object instead of primitive types.
 - how to use Bloc to work with Forms and Validations.
-- how to work with BlocBuilder, BlocListener and BlocListener to create the view.
+- how to work with BlocBuilder, BlocListener and BlocConsumer to create the view.
 - how to and when to use Cubits to design Business Logic of the Stepper. 
 - how to use the Stepper widget to create a multi-step form.
 
